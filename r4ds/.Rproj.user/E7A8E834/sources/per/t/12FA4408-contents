@@ -1,0 +1,155 @@
+---
+title: "R for Data Science Book Club"
+subtitle: "📚<br/>Chapters 1 and 2"
+author: "Alan Kinene"
+institute: "R4DS Online Learning Community"
+date: "2020/08/02"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+class: middle
+# Welcome to the Book Club
+.pull-left[
+<img src="img/logo-big.png" width="80%" height="90%" style = "display: block; margin-left: auto; margin-right: auto;"/>
+* Group 2 [Africa/Europe]
+
+* Facilitators
+ - Alan Kinene
+ - shmuhamadd
+ - Neha Moopen
+* Starting Monday 2020-08-03
+
+*  Every Monday at 19:30 CET (CEST)
+]
+.pull-right[
+<br/>
+<img src="https://d33wubrfki0l68.cloudfront.net/b88ef926a004b0fce72b2526b0b5c4413666a4cb/24a30/cover.png" style = "display: block; margin-left: auto; margin-right: auto; width: 80%;"/>
+]
+
+---
+class: middle
+# Outline
+
+1. Introduction of the book
+
+2. Questions
+
+3. Future meetings
+  * Meeting times 📅
+  
+  * Future chapter presenters 👔
+---
+class: center, middle, inverse
+
+# Introduction of the book
+---
+class: middle
+# What you will learn
+The goal of this book is to give you a solid foundation in the most important tools.
+
+<img src="https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png" style = "display: block; margin-left: auto; margin-right: auto;">
+---
+class: middle
+# Book organisation
+
+1. Visualisation and transformation of tidied data
+
+2. How models work
+
+3. Programming tools
+
+> Start with some motivating examples so you can see the bigger picture, and then dive into the details
+
+> Each section of the book is paired with exercises
+
+---
+class: middle
+# What you won’t learn?
+
+* Big data
+
+* Python, Julia, and friends
+
+* Non-rectangular data e.g., images, sounds, trees, and text
+
+* Hypothesis confirmation
+---
+class: middle
+# Prerequisites
+
+* Some programing experience <sup>1</sup>
+
+* There are four things you need to run the code in this book:
+  - R. go to CRAN, the comprehensive R archive network
+  
+  - RStudio. An [IDE](http://www.rstudio.com/download), for R programming.
+  
+  - A collection of R packages called the tidyverse.
+```
+    install.packages("tidyverse")
+    library(tidyverse)
+```
+
+  - Other packages. e.g.,
+```
+    install.packages(c("nycflights13", "gapminder", "Lahman"))
+```
+
+.footnote[
+[1] New to programming? see [Hands on Programming with R](https://www.amazon.com/dp/1449359019/ref=cm_sw_su_dp) by Garrett
+]
+---
+code: middle
+#  Running R code
+
+```
+*1 + 2
+#> [1] 3
+#> [1] 3
+```
+---
+code: middle
+# Getting help and learning more
+
+- Google
+ > Typically adding “R” <br/>Error messages
+ 
+- Stackoverflow
+
+- Rfordatascience online community
+
+- RStudio blog
+
+- Twitter
+> Hadley (@hadleywickham) <br/> Garrett (@statgarrett) <br/>@rstudiotips <br/> #rstats
+
+- http://www.r-bloggers.com
+---
+# Next week...
+Chapter 3: Visualisation
+---
+class: center, middle
+
+# Thank You!
+
+---
+class: center, middle, inverse
+
+# Questions?
+---
+class: center, middle, inverse
+
+# Future meetings
+
+### Meeting times
+
+### Future chapter presenters
+
