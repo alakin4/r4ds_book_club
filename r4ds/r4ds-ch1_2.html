@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>R for Data Science Book Club</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Alan Kinene" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# R for Data Science Book Club
+## 📚<br/>Chapters 1 and 2
+### Alan Kinene
+### R4DS Online Learning Community
+### 2020/08/02
+
+---
+
+
+class: middle
+# Welcome to the Book Club
+.pull-left[
+&lt;img src="img/logo-big.png" width="80%" height="90%" style = "display: block; margin-left: auto; margin-right: auto;"/&gt;
+* Group 2 [Africa/Europe]
+
+* Facilitators
+ - Alan Kinene
+ - shmuhamadd
+ - Neha Moopen
+* Starting Monday 2020-08-03
+
+*  Every Monday at 19:30 CET (CEST)
+]
+.pull-right[
+&lt;br/&gt;
+&lt;img src="https://d33wubrfki0l68.cloudfront.net/b88ef926a004b0fce72b2526b0b5c4413666a4cb/24a30/cover.png" style = "display: block; margin-left: auto; margin-right: auto; width: 80%;"/&gt;
+]
+
+---
+class: middle
+# Outline
+
+1. Introduction of the book
+
+2. Questions
+
+3. Future meetings
+  * Meeting times 📅
+  
+  * Future chapter presenters 👔
+---
+class: center, middle, inverse
+
+# Introduction of the book
+---
+class: middle
+# What you will learn
+The goal of this book is to give you a solid foundation in the most important tools.
+
+&lt;img src="https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png" style = "display: block; margin-left: auto; margin-right: auto;"&gt;
+---
+class: middle
+# Book organisation
+
+1. Visualisation and transformation of tidied data
+
+2. How models work
+
+3. Programming tools
+
+&gt; Start with some motivating examples so you can see the bigger picture, and then dive into the details
+
+&gt; Each section of the book is paired with exercises
+
+---
+class: middle
+# What you won’t learn?
+
+* Big data
+
+* Python, Julia, and friends
+
+* Non-rectangular data e.g., images, sounds, trees, and text
+
+* Hypothesis confirmation
+---
+class: middle
+# Prerequisites
+
+* Some programing experience &lt;sup&gt;1&lt;/sup&gt;
+
+* There are four things you need to run the code in this book:
+  - R. go to CRAN, the comprehensive R archive network
+  
+  - RStudio. An [IDE](http://www.rstudio.com/download), for R programming.
+  
+  - A collection of R packages called the tidyverse.
+```
+    install.packages("tidyverse")
+    library(tidyverse)
+```
+
+  - Other packages. e.g.,
+```
+    install.packages(c("nycflights13", "gapminder", "Lahman"))
+```
+
+.footnote[
+[1] New to programming? see [Hands on Programming with R](https://www.amazon.com/dp/1449359019/ref=cm_sw_su_dp) by Garrett
+]
+---
+code: middle
+#  Running R code
+
+```
+*1 + 2
+#&gt; [1] 3
+#&gt; [1] 3
+```
+---
+code: middle
+# Getting help and learning more
+
+- Google
+ &gt; Typically adding “R” &lt;br/&gt;Error messages
+ 
+- Stackoverflow
+
+- Rfordatascience online community
+
+- RStudio blog
+
+- Twitter
+&gt; Hadley (@hadleywickham) &lt;br/&gt; Garrett (@statgarrett) &lt;br/&gt;@rstudiotips &lt;br/&gt; #rstats
+
+- http://www.r-bloggers.com
+---
+# Next week...
+Chapter 3: Visualisation
+---
+class: center, middle
+
+# Thank You!
+
+---
+class: center, middle, inverse
+
+# Questions?
+---
+class: center, middle, inverse
+
+# Future meetings
+
+### Meeting times
+
+### Future chapter presenters
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

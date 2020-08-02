@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1596392832628.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3746997969",
+    "id" : "12FA4408",
+    "lastKnownWriteTime" : 1596392381,
+    "last_content_update" : 1596392381,
+    "path" : "~/Documents/Projects/R4DS office hours/r4ds book club/r4ds/r4ds ch1_2.Rmd",
+    "project_path" : "r4ds ch1_2.Rmd",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
